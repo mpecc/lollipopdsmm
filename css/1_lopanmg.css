@@ -1,0 +1,115 @@
+/*
+    author:helang
+    Email:helang.love@qq.com
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+	font-family: Helvetica;
+	background: rgba(86, 168, 255, 1);
+	
+	
+	
+	/*
+	
+	background-color:rgbaRGB(243,243,243,1);
+	
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Microsoft YaHei', 'Times New Roman', Times, serif;
+	font-family: Helvetica;
+    letter-spacing: 0;
+    min-width: 1200px;
+    color: rgba(51,51,51,1);
+	*/
+}
+
+.hl_nav{
+    background-color: rgba( 71, 147, 227, 1);
+    position: relative;
+    color: rgba(255,255,255,1);
+    min-width: 1200px;
+    height: 64px;
+}
+.hl_nav a{
+    display: block;
+    text-decoration: none;
+}
+.hl_nav .shade{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 64px;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(238,238,238,1);
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    box-shadow: 0 5px 15px #CCCCCC;
+    display: none;
+    border-bottom: #ffffff solid 1px;
+    border-bottom: rgba(255,255,255,0.3) solid 1px;
+}
+.hl_nav .nav_list{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -600px;
+    z-index: 2;
+    padding: 0;
+    list-style: none;
+    width: 1200px;
+    overflow: hidden;
+    height: 64px;
+}
+.hl_nav .nav_list>li{
+    padding: 0;
+    float: left;
+    margin: 0;
+    width: 120px;
+    text-align: center;
+    height: 264px;
+}
+.hl_nav .nav_head{
+    height: 64px;
+    line-height: 64px;
+    color: rgba(255,255,255,1);
+    font-size: 16px;
+    background-color: rgba( 71, 147, 227, 1);
+}
+.hl_nav .nav_head .icon{
+    font-size: 18px;
+}
+.hl_nav .item{
+    height: 40px;
+    line-height: 40px;
+    color: rgba(51,51,51,1);
+    position: relative;
+}
+.hl_nav .item:hover:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    bottom: 5px;
+    left: 30px;
+    background-color: rgba(79, 195, 162,1);
+}
+
+
+
+
+/*选择器*/
+.hl_nav .nav_list>li:hover .nav_head,.hl_nav .nav_list>li.active .nav_head{
+    background-color: rgba(79, 195, 162,1);
+}
+
+
+
+.hl_nav .nav_list>li.right{
+    float: right;
+}
+.hl_nav .nav_list>li:hover .item{
+
+}
